@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica de HTML semantico</title>
+</head>
+
+<body>
+    <!-- Header es la seccion superior de la página y generalmente incluye información introductoria, como el titulo y el menú de navegación -->
+    <!-- control K+C ayuda a agregar y quitar comentarios en línea -->
+    <header>
+        <h1>¡Hola! bienvenid@ a mi sitio web</h1>
+        <!--Menú de navegación-->
+        <!--La etiqueta nav es un mapa de navegación donde aparecen varias opciones, en este caso se agrega listas no ordenadas para poder agrupar las opciones y sea mas fácil modificarlo en css-->
+        <nav>
+            <ul>
+                <li>Sobre mí</li>
+                <li>Mis preferencias</li>
+                <li>Enlaces</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main es la seccion principal que contiene el contenido central en la página
+     Se recomienda usar main solo una vez en cada página para indicar la parte más importante del documento -->
+
+    <main>
+        <section>
+            <h2>Sobre mi</h2>
+            <p> Me llamo Diana y estoy aprendiendo desarrollo web y etiquetas semánticas de HTML</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quibusdam debitis nam vel, rem neque
+                odio voluptatibus ipsam consequatur enim magni quia, quisquam alias expedita deserunt quam. Praesentium,
+                mollitia quisquam.</p>
+        </section>
+        <section>Mis preferencias</section>
+        <ul>
+            <li>Programación</li>
+            <li>Artes</li>
+            <li>Lectura</li>
+            <li>Electrónica</li>
+            <li>Telefonía</li>
+        </ul>
+
+        <!-- Figure agrupa contenido visual como imágenes, y es común utilizarla en conjunto con la etiqueta figcaption, que proporciona un titulo o descripcion para el contenido visual  -->
+
+        <figure>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/550/171/original/cute-rabbit-kawaii-with-a-heart-png.png"
+                alt="Imagen de conejito" width="300" title="conejito">
+            <figcaption>un conejito porque me gusto</figcaption>
+        </figure>
+        <section>
+            <h2>Enlaces</h2>
+            <p>Visita estos sitios recomendados para aprender desarrollo web</p>
+            <!-- a es una etiqueta de enlaces que generalmente viene acompañada del atributo href donde agregamos la direccion a la cual queremos redireccionar, otro atributo comunmente utilizado es tarjet que da un control de como se va abrir la página -->
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+<footer> &copy; 2024 Diana López. Todos los derechos reservados</footer>
+</body>
+
+</html>
